@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #eef2f7;
+}
+
+
+/* HEADER */
+
+header{
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+
+/* CATEGORY */
+
+.category{
+    padding: 70px 60px;
+}
+
+.category h2{
+    font-size: 38px;
+    color: #111827;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.category h2::after{
+    content: "";
+    width: 90px;
+    height: 5px;
+    background: #2563eb;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    border-radius: 10px;
+}
+
+
+/* CARD CONTAINER */
+
+.places-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+/* CARD */
+
+.place-card{
+    width: 420px;
+    background: white;
+    border-radius: 28px;
+    overflow: hidden;
+
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.12);
+
+    transition: 0.4s;
+}
+
+.place-card:hover{
+    transform: translateY(-8px);
+}
+
+
+/* IMAGE */
+
+.place-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+/* CONTENT */
+
+.card-content{
+    padding: 28px;
+}
+
+.card-content h3{
+    font-size: 30px;
+    margin-bottom: 14px;
+    color: #111827;
+}
+
+.rating{
+    color: #f59e0b;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.description{
+    color: #4b5563;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.location{
+    color: #6b7280;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+/* BUTTON */
+
+.btn{
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: #1d4ed8;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 900px){
+
+    header{
+        height: 220px;
+    }
+
+    header h1{
+        font-size: 40px;
+    }
+
+    .category{
+        padding: 40px 20px;
+    }
+
+    .category h2{
+        font-size: 30px;
+    }
+
+    .place-card{
+        width: 100%;
+    }
+
+}
